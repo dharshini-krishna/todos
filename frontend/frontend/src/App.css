@@ -1,0 +1,140 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #00ffe5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  max-width: 800px;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00ffe5;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 0 40px #00ffe5;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00ffe5, #ff00c8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  text-shadow: 0 0 8px #00ffe5;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.input-section input {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #00ffe5;
+  border-radius: 10px;
+  background-color: #1a1a2e;
+  color: #00ffe5;
+  width: 60%;
+  max-width: 400px;
+  outline: none;
+  box-shadow: 0 0 12px #00ffe5;
+  transition: 0.3s ease-in-out;
+}
+
+.input-section input:focus {
+  box-shadow: 0 0 20px #00ffe5;
+}
+
+.input-section button {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #ff00c8, #00ffe5);
+  color: #0f0c29;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff00c8;
+  transition: all 0.3s ease;
+}
+
+.input-section button:hover {
+  background: linear-gradient(45deg, #00ffe5, #ff00c8);
+  box-shadow: 0 0 25px #00ffe5;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-entry {
+  background-color: #1a1a2e;
+  border: 1px solid #00ffe5;
+  box-shadow: 0 0 10px #00ffe5;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: transform 0.3s;
+}
+
+.todo-entry:hover {
+  transform: scale(1.02);
+}
+
+.todo-text {
+  flex: 1;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #8888aa;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.button-group button {
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background: #ff00c8;
+  color: white;
+  box-shadow: 0 0 8px #ff00c8;
+  transition: 0.3s;
+}
+
+.button-group button:hover {
+  background: #00ffe5;
+  box-shadow: 0 0 12px #00ffe5;
+  color: #0f0c29;
+}
